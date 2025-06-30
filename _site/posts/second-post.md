@@ -1,6 +1,6 @@
 ---
 title: second post
-layout: "base.njk"
+layout: "home.njk"
 ---
 
 first post content
