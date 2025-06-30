@@ -1,6 +1,6 @@
 ---
 title: First Post
-layout: "base.njk"
+layout: "home.njk"
 ---
 
 First post content
