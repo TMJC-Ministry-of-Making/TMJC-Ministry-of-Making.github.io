@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maker's Club</title>
+    <link href="../style.css" rel="stylesheet">
+</head>
+
+<body>
+{% include 'header.njk' %}
+    <div id="page">
+<div id="projects">
+        <h1 id="projects-title">Our Events</h1>
+             <div class="projects-grid">
+{%- for event in collections.events -%}
+         <div class="project-card">
+         <img src="home-assets/TMJC-StudentDevelopment_CCA_MakersClub_11.jpeg" alt="event Image" />
+         <div class="project-content">
+            <h3>{{ event.data.title }}</h3>
+           <p>{{event.data.description}}
+           </p>
+           <a href="{{event.url}}" class="project-button">Learn More</a>
+          </div>
+       </div>
+  {%- endfor -%}
+     </div>
+ 
+    </div>
+    </div>
+</body>
+</html>
+
+
+
+<!--
+<ul>
+{%- for event in collections.events -%}
+  <li><a href="{{event.url}}">{{ event.data.title }}</a></li>
+{%- endfor -%}
+</ul>
+-->
