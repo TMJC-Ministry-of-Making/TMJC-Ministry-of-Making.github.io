@@ -41,3 +41,4 @@ content:
      - {name: Creators, label: Creators, type: image, options: { path: _site/assets } }
      - {name: Designers, label: Designers, type: image, options: { path: _site/assets } }
      - {name: aboutimg, label: About Image, type: image, options: { path: _site/assets } }
+     - {name: layout, hidden: true, type: string, default: "home.njk"}
