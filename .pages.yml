@@ -1,1 +1,17 @@
-media: files
+content:
+  - name: projects
+    label: Posts
+    path: _site/projects
+    type: collection
+    fields: 
+      - {name: title, Label: title, type: string}
+      - {name: layout, hidden: true, type: string, default: article.njk}
+      - {name: title, Label: title, type: string}
+      - {name: title, Label: title, type: string}
+      - {name: title, Label: title, type: string}
+      - {name: title, Label: title, type: string}
+  - name: events
+    label: Authors
+    path: _site/events
+    type: file
+    fields:
