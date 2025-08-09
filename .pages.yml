@@ -7,7 +7,7 @@ content:
       - {name: title, label: title, type: string}
       - {name: author, label: Author, type: string}
       - {name: date, label: Date, type: date}
-      - {name: image, label: title, type: string}
+      - {name: image, label: title, type: image}
       - {name: imageAlt, label: imageAlt, type: string}
       - {name: description, label: description, type: string, options: { maxLength: 160 } }
       - {name: layout, hidden: true, type: string, default: article.njk}
@@ -19,7 +19,7 @@ content:
      - {name: title, label: title, type: string}
      - {name: author, label: Author, type: string}
      - {name: date, label: Date, type: date}
-     - {name: image, label: title, type: string}
+     - {name: image, label: title, type: image}
      - {name: imageAlt, label: imageAlt, type: string}
      - {name: description, label: description, type: string, options: { maxLength: 160 } }
      - {name: layout, hidden: true, type: string, default: article.njk}
