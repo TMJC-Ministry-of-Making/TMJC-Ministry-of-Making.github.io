@@ -4,20 +4,20 @@ content:
     path: _site/projects
     type: collection
     fields: 
-      - {name: title, Label: title, type: string}
+      - {name: title, label: title, type: string}
       - {name: layout, hidden: true, type: string, default: article.njk}
-      - {name: title, Label: title, type: string}
-      - {name: title, Label: title, type: string}
-      - {name: title, Label: title, type: string}
-      - {name: title, Label: title, type: string}
+      - {name: title, label: title, type: string}
+      - {name: title, label: title, type: string}
+      - {name: title, label: title, type: string}
+      - {name: title, label: title, type: string}
   - name: events
     label: Events
     path: _site/events
     type: file
     fields:
-      - {name: title, Label: title, type: string}
+      - {name: title, label: title, type: string}
       - {name: layout, hidden: true, type: string, default: article.njk}
-      - {name: title, Label: title, type: string}
-      - {name: title, Label: title, type: string}
-      - {name: title, Label: title, type: string}
-      - {name: title, Label: title, type: string}
+      - {name: title, label: title, type: string}
+      - {name: title, label: title, type: string}
+      - {name: title, label: title, type: string}
+      - {name: title, label: title, type: string}
