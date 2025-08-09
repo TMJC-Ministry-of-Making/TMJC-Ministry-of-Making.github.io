@@ -13,7 +13,7 @@ content:
   - name: events
     label: Events
     path: _site/events
-    type: file
+    type: collection
     fields:
      - {name: title, label: title, type: string}
      - {name: layout, hidden: true, type: string, default: article.njk}
