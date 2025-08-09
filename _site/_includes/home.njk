@@ -40,7 +40,7 @@
   <div class="events-grid">
 {%- for event in collections.events | limit(2) -%}
       <div class="event-card">
-      <img src="home-assets/TMJC-StudentDevelopment_CCA_MakersClub_11.jpeg" alt="Event 1 Image" />
+      <img src="{{ event.data.image }}" />
       <div class="event-content">
         <h3>{{ event.data.title }}</h3>
         <p class="event-date">{{ event.data.date }}</p>
@@ -60,7 +60,7 @@
              <div class="projects-grid">
 {%- for project in collections.projects | limit(3) -%}
          <div class="project-card">
-         <img src="home-assets/TMJC-StudentDevelopment_CCA_MakersClub_11.jpeg" alt="project 2 Image" />
+         <img src="{{ project.data.image }}" alt="project 2 Image" />
          <div class="project-content">
             <h3>{{ project.data.title }}</h3>
            <p>{{project.data.description}}
