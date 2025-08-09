@@ -37,9 +37,9 @@ content:
      - {name: description, label: description, type: string, options: { maxLength: 160 } }
      - {name: layout, hidden: true, type: string, default: "article.njk"}
      - {name: body, label: Body, type: rich-text}
-  - name: events
-    label: Events
-    path: _site/events
+  - name: Home
+    label: Home
+    path: _site/
     type: file
     
   
