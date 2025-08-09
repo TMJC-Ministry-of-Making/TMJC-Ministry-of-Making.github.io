@@ -1,9 +1,4 @@
 media:
-  - name: eventimgs
-    label: Event Images
-    input: _site/events/assets
-    output: /events/assets
-    categories: [ image ]
   - name: projectsimg
     label: Projects Images
     input: _site/projects/assets
