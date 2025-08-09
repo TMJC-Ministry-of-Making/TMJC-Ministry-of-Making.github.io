@@ -9,6 +9,11 @@ media:
     input: _site/projects/assets
     output: /projects/assets
     categories: [ image ]
+  - name: homeimg
+    label: Home Images
+    input: _site/home-assets
+    output: /home-assets
+    categories: [ image ]
 
 content:
   - name: projects
@@ -41,5 +46,7 @@ content:
     label: Home
     path: _site/index.md
     type: file
-    
-  
+    fields:
+     - {name: image, label: image, type: image, options: { path: _site/home-assets } }
+     - {name: image, label: image, type: image, options: { path: _site/home-assets } }
+     - {name: image, label: image, type: image, options: { path: _site/home-assets } }
