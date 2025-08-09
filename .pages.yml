@@ -11,7 +11,7 @@ content:
       - {name: title, Label: title, type: string}
       - {name: title, Label: title, type: string}
   - name: events
-    label: Authors
+    label: Events
     path: _site/events
     type: file
     fields:
