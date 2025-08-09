@@ -39,7 +39,7 @@ content:
      - {name: body, label: Body, type: rich-text}
   - name: Home
     label: Home
-    path: _site/
+    path: _site/index.md
     type: file
     
   
