@@ -4,8 +4,8 @@ media:
     input: _site/events/assets
     output: /events/assets
     categories: [ image ]
-  - name: eventimgs
-    label: Event Images
+  - name: projectsimg
+    label: Projects Images
     input: _site/projects/assets
     output: /projects/assets
     categories: [ image ]
