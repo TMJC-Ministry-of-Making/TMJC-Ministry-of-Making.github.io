@@ -1,6 +1,6 @@
 media:
   - name: eventimgs
-    label: Eventimgs
+    label: Event Images
     input: _site/events/assets
     output: /events/assets
     categories: [ image ]
