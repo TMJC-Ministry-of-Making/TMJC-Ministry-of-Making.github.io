@@ -18,7 +18,7 @@ content:
     fields: 
       - {name: title, label: title, type: string}
       - {name: author, label: Author, type: string}
-      - {name: date, label: Date, type: date}
+      - {name: date, label: Date, type: string}
       - {name: image, label: image, type: image, options: { path: _site/projects/assets } }
       - {name: imageAlt, label: imageAlt, type: string}
       - {name: description, label: description, type: string, options: { maxLength: 160 } }
@@ -31,7 +31,7 @@ content:
     fields:
      - {name: title, label: title, type: string}
      - {name: author, label: Author, type: string}
-     - {name: date, label: Date, type: date}
+     - {name: date, label: Date, type: string}
      - {name: image, label: image, type: image, options: { path: _site/events/assets } }
      - {name: imageAlt, label: imageAlt, type: string}
      - {name: description, label: description, type: string, options: { maxLength: 160 } }
