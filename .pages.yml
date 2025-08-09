@@ -15,3 +15,9 @@ content:
     path: _site/events
     type: file
     fields:
+      - {name: title, Label: title, type: string}
+      - {name: layout, hidden: true, type: string, default: article.njk}
+      - {name: title, Label: title, type: string}
+      - {name: title, Label: title, type: string}
+      - {name: title, Label: title, type: string}
+      - {name: title, Label: title, type: string}
