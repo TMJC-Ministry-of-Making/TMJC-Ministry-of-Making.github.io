@@ -5,19 +5,21 @@ content:
     type: collection
     fields: 
       - {name: title, label: title, type: string}
-      - {name: layout, hidden: true, type: string, default: article.njk}
+      - {name: author, label: Author, type: string}
       - {name: date, label: Date, type: date}
       - {name: image, label: title, type: string}
       - {name: imageAlt, label: imageAlt, type: string}
       - {name: description, label: description, type: string, options: { maxLength: 160 } }
+      - {name: layout, hidden: true, type: string, default: article.njk}
   - name: events
     label: Events
     path: _site/events
     type: collection
     fields:
      - {name: title, label: title, type: string}
-     - {name: layout, hidden: true, type: string, default: article.njk}
+     - {name: author, label: Author, type: string}
      - {name: date, label: Date, type: date}
      - {name: image, label: title, type: string}
      - {name: imageAlt, label: imageAlt, type: string}
      - {name: description, label: description, type: string, options: { maxLength: 160 } }
+     - {name: layout, hidden: true, type: string, default: article.njk}
