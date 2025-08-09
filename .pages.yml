@@ -37,8 +37,8 @@ content:
     path: _site/index.md
     type: file
     fields:
-     - {name: Innovators, label: Innovators, type: image, options: { path: _site/assets } }
-     - {name: Creators, label: Creators, type: image, options: { path: _site/assets } }
-     - {name: Designers, label: Designers, type: image, options: { path: _site/assets } }
-     - {name: aboutimg, label: About Image, type: image, options: { path: _site/assets } }
+     - {name: Innovators, label: Innovators, type: image, options: { path: /assets } }
+     - {name: Creators, label: Creators, type: image, options: { path: /assets } }
+     - {name: Designers, label: Designers, type: image, options: { path: /assets } }
+     - {name: aboutimg, label: About Image, type: image, options: { path: /assets } }
      - {name: layout, hidden: true, type: string, default: "home.njk"}
