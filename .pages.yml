@@ -10,7 +10,6 @@ content:
       - {name: image, label: title, type: string}
       - {name: imageAlt, label: imageAlt, type: string}
       - {name: description, label: description, type: string, options: { maxLength: 160 } }
-content:
   - name: events
     label: Events
     path: _site/events
