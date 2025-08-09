@@ -13,7 +13,7 @@
     <div id="hero">
         <h1 id="herotitle">Discover Who We Are</h1>
         <h3 id="herotext">The Repository of Everything Makers’. Learn what Maker’s Club has done, what we’re about and what we are currently creating, </h3>
-        <button id="CTA"><a href="allarticles/index.html">Read about us →</a></button>
+        <button id="CTA"><a href="about/index.html">Read about us →</a></button>
         <img id="heroimg" src="home-assets/TMJC-StudentDevelopment_CCA_MakersClub_11.jpeg">
     </div>
     <div id="About">
@@ -28,9 +28,9 @@
             and pushing creative limits. From gadgets to gizmos, we’re hands-on innovators turning wild ideas into real-world impact. No templates. No boundaries. 
             Just pure making magic.</p>
         <ul id="aboutbuttons">
-            <li class="switchbutton">1</li>
-            <li class="switchbutton">2</li>
-            <li class="switchbutton">3</li>
+            <li id="switchbutton1">Innovators</li>
+            <li id="switchbutton2">Creators</li>
+            <li id="switchbutton3">Designers</li>
         </ul>
         <img src="home-assets/TMJC-StudentDevelopment_CCA_MakersClub_11.jpeg" id="aboutimg">
     </div>
@@ -77,5 +77,18 @@
     </div>
     
 </body>
-
+<script>
+  document.getElementById("switchbutton1").addEventListener("click", function() {
+       document.getElementById("aboutimg").src = "TMJC-StudentDevelopment_CCA_MakersClub_11.jpeg";
+       console.log("1")
+  });
+    document.getElementById("switchbutton2").addEventListener("click", function() {
+          document.getElementById("aboutimg").src = "image2.jpg";
+                 console.log("2")
+  });
+    document.getElementById("switchbutton3").addEventListener("click", function() {
+            document.getElementById("aboutimg").src = "image2.jpg";
+                   console.log("3")
+  });
+</script>
 </html>
