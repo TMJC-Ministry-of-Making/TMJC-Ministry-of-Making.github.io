@@ -1,6 +1,6 @@
 content:
   - name: projects
-    label: Posts
+    label: Projects
     path: _site/projects
     type: collection
     fields: 
