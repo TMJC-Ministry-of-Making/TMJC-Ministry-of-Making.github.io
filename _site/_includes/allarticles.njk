@@ -15,7 +15,7 @@
              <div class="projects-grid">
 {%- for project in collections.projects -%}
          <div class="project-card">
-         <img src="project.data.image" alt="project Image" />
+         <img src="{{ project.data.image }}" alt="project Image" />
          <div class="project-content">
             <h3>{{ project.data.title }}</h3>
            <p>{{project.data.description}}
@@ -40,3 +40,4 @@
 {%- endfor -%}
 </ul>
 -->
+
