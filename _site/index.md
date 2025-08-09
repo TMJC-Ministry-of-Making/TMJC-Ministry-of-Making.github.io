@@ -4,6 +4,7 @@ layout: "home.njk"
 Innovators:
 Creators: 
 Designers:
+aboutimg:
 ---
 
 
