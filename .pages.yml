@@ -15,9 +15,9 @@ content:
     path: _site/events
     type: file
     fields:
-      - {name: title, label: title, type: string}
-      - {name: layout, hidden: true, type: string, default: article.njk}
-      - {name: title, label: title, type: string}
-      - {name: title, label: title, type: string}
-      - {name: title, label: title, type: string}
-      - {name: title, label: title, type: string}
+     - {name: title, label: title, type: string}
+     - {name: layout, hidden: true, type: string, default: article.njk}
+     - {name: date, label: Date, type: date}
+     - {name: image, label: title, type: string}
+     - {name: imageAlt, label: imageAlt, type: string}
+     - {name: description, label: description, type: string, options: { maxLength: 160 } }
