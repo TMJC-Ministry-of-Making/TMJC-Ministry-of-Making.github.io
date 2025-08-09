@@ -22,7 +22,7 @@ content:
       - {name: image, label: image, type: image, options: { path: _site/projects/assets} }
       - {name: imageAlt, label: imageAlt, type: string}
       - {name: description, label: description, type: string, options: { maxLength: 160 } }
-      - {name: layout, hidden: true, type: string, default: article.njk}
+      - {name: layout, hidden: true, type: string, default: "article.njk"}
       - {name: body, label: Body, type: rich-text}
   - name: events
     label: Events
@@ -35,5 +35,5 @@ content:
      - {name: image, label: image, type: image, options: { path: _site/events/assets} }
      - {name: imageAlt, label: imageAlt, type: string}
      - {name: description, label: description, type: string, options: { maxLength: 160 } }
-     - {name: layout, hidden: true, type: string, default: article.njk}
+     - {name: layout, hidden: true, type: string, default: "article.njk"}
      - {name: body, label: Body, type: rich-text}
