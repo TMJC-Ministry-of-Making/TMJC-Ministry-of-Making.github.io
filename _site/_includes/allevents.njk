@@ -15,7 +15,7 @@
              <div class="projects-grid">
 {%- for event in collections.events -%}
          <div class="project-card">
-         <img src="home-assets/TMJC-StudentDevelopment_CCA_MakersClub_11.jpeg" alt="event Image" />
+         <img src="{{ event.data.image }}" alt="event Image" />
          <div class="project-content">
             <h3>{{ event.data.title }}</h3>
            <p>{{event.data.description}}
