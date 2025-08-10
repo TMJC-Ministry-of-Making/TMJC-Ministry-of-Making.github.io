@@ -504,8 +504,7 @@ header ul {
     max-height: 300px;
     margin-top: 30px;
   }
-
-  /* === Events & Projects shared tweaks (optional) === */
+    
   #Events, #Projects {
     padding: 20px;
   }
