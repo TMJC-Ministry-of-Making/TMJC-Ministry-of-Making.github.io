@@ -2,6 +2,7 @@ const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter("postDate", (dateObj) => {
+        if (dateObj===null) return [];
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
 
