@@ -83,13 +83,14 @@ header {
 #titleimage {
     height: 700px;
     width: 700px;
-    text-align: center;
+    display: flex;
     margin-left: 50px;
+    align-items: center;
 }
 
-#titleimage * {
-    height: 100%;
-    width: 100%;
+#titleimage img {
+    height: 400px;
+    width: 700px;
     object-fit: contain;
 }
 
@@ -123,6 +124,7 @@ header ul {
 }
 
 #content {
+    margin-top: 100px;
     max-width: 60dvw;
     display: flex;
     flex-direction: column;
