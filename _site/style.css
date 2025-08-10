@@ -197,7 +197,8 @@ header ul {
 #aboutimg {
     grid-column: 4 / 7;
     grid-row: 4;
-    width: 40dvw;
+    width: 42dvw;
+    height: 500px;
 }
 
 #Events {
