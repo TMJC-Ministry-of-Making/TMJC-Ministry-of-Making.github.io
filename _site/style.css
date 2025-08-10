@@ -343,9 +343,9 @@ header ul {
 
 .project-card img {
     border-radius: 20px;
-    object-fit: cover;
+    object-fit: fill;
     width: 40dvw;
-    height: 100%;
+    height: 25dvw;
     margin-right: 100px;
     margin-left: 150px;
     float: left;
