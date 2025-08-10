@@ -13,7 +13,7 @@
 <div id="Projects">
         <h1 id="projects-title">Our Projects</h1>
              <div class="projects-grid">
-{%- for project in collections.projects -%}
+{%- for project in collections.projects | reverse -%}
          <div class="project-card">
          <img src="{{ project.data.image }}" alt="project Image" />
          <div class="project-content">
@@ -40,4 +40,5 @@
 {%- endfor -%}
 </ul>
 -->
+
 
