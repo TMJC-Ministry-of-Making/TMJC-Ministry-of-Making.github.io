@@ -38,7 +38,7 @@
 <section id="Events">
   <h1 id="events-title">Upcoming Events</h1>
   <div class="events-grid">
-{%- for event in collections.events | limit(2) -%}
+{%- for event in collections.events | limit(2) | reverse -%}
       <div class="event-card">
       <img src="{{ event.data.image }}" />
       <div class="event-content">
@@ -58,7 +58,7 @@
         <h1 id="projects-title">Our Projects</h1>
                <a href="allarticles/index.html" id="Seeallprojects">See All projects →</a>
              <div class="projects-grid">
-{%- for project in collections.projects | limit(3) -%}
+{%- for project in collections.projects | limit(3) | reverse -%}
          <div class="project-card">
          <img src="{{ project.data.image }}" alt="project 2 Image" />
          <div class="project-content">
@@ -93,6 +93,7 @@
   });
 </script>
 </html>
+
 
 
 
