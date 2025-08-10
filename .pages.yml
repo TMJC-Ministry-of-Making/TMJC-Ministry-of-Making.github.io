@@ -42,3 +42,12 @@ content:
      - {name: Designers, label: Designers, type: image}
      - {name: heroimg, label: Main Image, type: image}
      - {name: layout, hidden: true, type: string, default: "home.njk"}
+  - name: About
+    label: About
+    path: _site/about.md
+    type: file
+    fields:
+     - {name: title, label: title, type: string}
+     - {name: image, label: image, type: image }
+     - {name: imageAlt, label: imageAlt, type: string}
+     - {name: layout, hidden: true, type: string, default: "article.njk"}
