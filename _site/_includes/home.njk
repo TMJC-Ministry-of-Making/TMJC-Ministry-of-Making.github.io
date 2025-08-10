@@ -43,7 +43,7 @@
       <img src="{{ event.data.image }}" />
       <div class="event-content">
         <h3>{{ event.data.title }}</h3>
-        <p class="event-date">{{ event.data.date }}</p>
+        <p class="event-date">{{ event.data.date | postDate }}</p>
         <p>{{ event.data.description }}</p>
         <a href="{{event.url}}" class="event-button">Learn More</a>
       </div>
@@ -93,5 +93,6 @@
   });
 </script>
 </html>
+
 
 
