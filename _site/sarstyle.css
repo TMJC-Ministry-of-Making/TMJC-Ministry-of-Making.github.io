@@ -134,3 +134,75 @@ header ul {
     width: 100%;
     word-wrap: break-word;
 }
+
+@media (max-width: 768px) {
+  
+  /* === HEADER === */
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    height: auto;
+  }
+
+  header ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  #Title {
+    font-size: 2rem;
+    width: auto;
+    text-align: center;
+  }
+
+  #title {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  #smalltitlediv {
+    margin-top: 40px;
+    padding: 0 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #smalltitlediv h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  #titleimage {
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    justify-content: center;
+  }
+
+  #titleimage img {
+    width: 100%;
+    max-width: 90vw;
+    height: auto;
+    object-fit: contain;
+  }
+
+  #content {
+    margin-top: 40px;
+    max-width: 90vw;
+    padding: 0 20px;
+  }
+
+  #content * {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
