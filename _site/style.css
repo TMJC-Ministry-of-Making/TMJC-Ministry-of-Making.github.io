@@ -343,7 +343,7 @@ header ul {
 .project-card img {
     border-radius: 20px;
     object-fit: cover;
-    width: 40%;
+    width: 40dvw;
     height: 100%;
     margin-right: 100px;
     margin-left: 150px;
