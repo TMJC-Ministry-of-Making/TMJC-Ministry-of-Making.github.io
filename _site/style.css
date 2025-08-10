@@ -236,7 +236,7 @@ header ul {
     background-color: white;
     box-shadow: 8px 8px 0 var(--darkblueclr);
     overflow: hidden;
-    max-width: 500px;
+    min-width: 80%;
     text-align: left;
     border: solid 5px var(--darkblueclr);
 }
