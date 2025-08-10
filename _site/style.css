@@ -333,7 +333,8 @@ header ul {
 }
 
 .project-card {
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
     max-width: 80dvw;
     min-height: 45dvh;
     text-align: left;
