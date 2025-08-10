@@ -398,3 +398,157 @@ header ul {
 }
 
 /* #FFFCF8*/
+
+@media (max-width: 768px) {
+
+  /* === Header === */
+  header {
+    padding: 0 20px;
+    height: auto;
+  }
+
+  header ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  #Title {
+    font-size: 2rem;
+    width: auto;
+    text-align: center;
+    grid-column: 1 / -1;
+  }
+
+  /* === HERO SECTION === */
+  #hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    padding: 40px 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  #herotitle {
+    font-size: 2.5em;
+    grid-column: 1 / -1;
+    padding-top: 20px;
+  }
+
+  #herotext {
+    font-size: 1.2em;
+    grid-column: 1 / -1;
+    padding: 20px 0;
+  }
+
+  #CTA {
+    width: 100%;
+    max-width: 300px;
+    height: 60px;
+    font-size: 1.2em;
+    margin: 20px auto;
+    grid-column: 1 / -1;
+  }
+
+  #heroimg {
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* === ABOUT SECTION === */
+  #About {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    padding: 40px 20px;
+    line-height: 1.7em;
+    text-align: left;
+  }
+
+  #abouttitle {
+    font-size: 2.5em;
+    margin-top: 40px;
+    padding-top: 0;
+    grid-column: 1 / -1;
+  }
+
+  #abouttext {
+    font-size: 1rem;
+    grid-column: 1 / -1;
+    margin-top: 20px;
+  }
+
+  #aboutbuttons {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+    height: 100%;
+    grid-column: 1 / -1;
+  }
+
+  #switchbutton1,
+  #switchbutton2,
+  #switchbutton3 {
+    width: 150px;
+    height: 64px;
+    font-size: 0.9rem;
+  }
+
+  #aboutimg {
+    object-fit: fill;
+    grid-column: 1 / -1;
+    width: 100%;
+    max-height: 300px;
+    margin-top: 30px;
+  }
+
+  /* === Events & Projects shared tweaks (optional) === */
+  #Events, #Projects {
+    padding: 20px;
+  }
+
+  .events-grid, .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-card, .project-card {
+    max-width: 100%;
+  }
+
+  .project-card {
+    display: block;
+    text-align: center;
+  }
+
+  .project-card img {
+    width: 90%;
+    height: auto;
+    margin: 0 auto 20px;
+  }
+
+  .project-content {
+    padding: 10px;
+  }
+
+  .project-content h3, .event-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .project-content p, .event-content p {
+    font-size: 1rem;
+  }
+
+  #events-title,
+  #projects-title {
+    font-size: 2rem;
+    margin-top: 10vh;
+  }
+
+  .see-all-link {
+    font-size: 1.2rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
