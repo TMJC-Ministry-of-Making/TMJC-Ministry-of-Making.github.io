@@ -17,7 +17,7 @@
             <div id="smalltitlediv">
             <h1>{{title}}</h1>
             <p id="desc">{{description}}</p>            
-            <time>{{date}}</time>
+            <time>{{date | postDate }}</time>
             <address>{{author}}</address>
             </div>
         </div>
@@ -38,3 +38,4 @@
 {%- endfor -%}
 </ul>
 -->
+
