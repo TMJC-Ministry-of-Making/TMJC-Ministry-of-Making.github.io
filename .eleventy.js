@@ -7,9 +7,7 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy("_site/style.css");
                         eleventyConfig.addPassthroughCopy("_site/sarstyle.css");
-        eleventyConfig.addPassthroughCopy("_site/home-assets");
-            eleventyConfig.addPassthroughCopy("_site/events/assets");
-            eleventyConfig.addPassthroughCopy("_site/projects/assets");
+        eleventyConfig.addPassthroughCopy("_site/assets");
 
 eleventyConfig.addFilter("limit", (arr, limit) => {
   if (!Array.isArray(arr)) return [];
