@@ -1,4 +1,4 @@
 {
-    "layout": "home.njk",
-    "tags": "events"
+  "layout": "home.njk",
+  "tags": "events"
 }

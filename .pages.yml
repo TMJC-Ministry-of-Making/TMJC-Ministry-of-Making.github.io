@@ -3,53 +3,63 @@ media:
     label: Images
     input: _site/assets
     output: /assets
-    categories: [ image ]
+    categories: [image]
 
 content:
   - name: projects
     label: Projects
     path: _site/projects
     type: collection
-    fields: 
-      - {name: title, label: title, type: string}
-      - {name: author, label: Author, type: string}
-      - {name: date, label: Date YYYY-MM-DD, type: string}
-      - {name: image, label: image, type: image }
-      - {name: imageAlt, label: imageAlt, type: string}
-      - {name: description, label: description(Max 100 chars), type: string, options: { maxLength: 100 } }
-      - {name: layout, hidden: true, type: string, default: "article.njk"}
-      - {name: body, label: Body, type: rich-text}
+    fields:
+      - { name: title, label: title, type: string }
+      - { name: author, label: Author, type: string }
+      - { name: date, label: Date YYYY-MM-DD, type: string }
+      - { name: image, label: image, type: image }
+      - { name: imageAlt, label: imageAlt, type: string }
+      - {
+          name: description,
+          label: description(Max 100 chars),
+          type: string,
+          options: { maxLength: 100 },
+        }
+      - { name: layout, hidden: true, type: string, default: "article.njk" }
+      - { name: body, label: Body, type: rich-text }
   - name: events
     label: Events
     path: _site/events
     type: collection
     fields:
-     - {name: title, label: title, type: string}
-     - {name: author, label: Author, type: string}
-     - {name: date, label: Date YYYY-MM-DD, type: string}
-     - {name: image, label: image, type: image }
-     - {name: imageAlt, label: imageAlt, type: string}
-     - {name: description, label: description(Max 100 chars), type: string, options: { maxLength: 100 } }
-     - {name: layout, hidden: true, type: string, default: "article.njk"}
-     - {name: body, label: Body, type: rich-text}
+      - { name: title, label: title, type: string }
+      - { name: author, label: Author, type: string }
+      - { name: date, label: Date YYYY-MM-DD, type: string }
+      - { name: image, label: image, type: image }
+      - { name: imageAlt, label: imageAlt, type: string }
+      - {
+          name: description,
+          label: description(Max 100 chars),
+          type: string,
+          options: { maxLength: 100 },
+        }
+      - { name: layout, hidden: true, type: string, default: "article.njk" }
+      - { name: body, label: Body, type: rich-text }
   - name: Home
     label: Home
     path: _site/index.md
     type: file
     fields:
-     - {name: Innovators, label: Innovators, type: image}
-     - {name: Creators, label: Creators, type: image}
-     - {name: Designers, label: Designers, type: image}
-     - {name: heroimg, label: Main Image, type: image}
-     - {name: abouttext, label: About Text, type: string}
-     - {name: layout, hidden: true, type: string, default: "home.njk"}
+      - { name: Innovators, label: Innovators, type: image }
+      - { name: Creators, label: Creators, type: image }
+      - { name: Designers, label: Designers, type: image }
+      - { name: heroimg, label: Main Image, type: image }
+      - { name: abouttext, label: About Text, type: string }
+      - { name: layout, hidden: true, type: string, default: "home.njk" }
   - name: About
     label: About
     path: _site/about.md
     type: file
     fields:
-     - {name: title, label: title, type: string}
-     - {name: image, label: image, type: image }
-     - {name: imageAlt, label: imageAlt, type: string}
-     - {name: layout, hidden: true, type: string, default: "article.njk"}
-     - {name: body, label: Body, type: rich-text}
+      - { name: title, label: title, type: string }
+      - { name: image, label: image, type: image }
+      - { name: imageAlt, label: imageAlt, type: string }
+      - { name: layout, hidden: true, type: string, default: "article.njk" }
+      - { name: body, label: Body, type: rich-text }
