@@ -6,6 +6,10 @@ on:
       - main
   workflow_dispatch:
 
+concurrency:
+  group: github-pages-deployment
+  cancel-in-progress: true
+
 jobs:
   deploy_page:
     runs-on: ubuntu-latest
