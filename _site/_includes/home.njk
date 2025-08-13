@@ -1,89 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A Nice Website for a Nice Maker's Club">
-    <title>Maker's Club</title>
-    <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Nice Website for a Nice Maker's Club">
+  <title>Maker's Club</title>
+  <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
 {% include 'header.njk' %}
-    <div id="page">
-    <div id="hero">
-        <h1 id="herotitle">Discover Who We Are</h1>
-        <h3 id="herotext">The Repository of Everything Makers’. Learn what Maker’s Club has done, what we’re about and what we are currently creating, </h3>
-        <button id="CTA"><a href="about/index.html">Read about us →</a></button>
-        <img id="heroimg" src="{{ heroimg }}">
+  <div id="page">
+  <div id="hero">
+    <h1 id="herotitle">Discover Who We Are</h1>
+    <h3 id="herotext">The Repository of Everything Makers’. Learn what Maker’s Club has done, what we’re about and what we are currently creating, </h3>
+    <button id="CTA"><a href="about/index.html">Read about us →</a></button>
+    <img id="heroimg" src="{{ heroimg }}">
+  </div>
+  <div id="About">
+    <h1 id="abouttitle">Who We Are</h1>
+    <p id="abouttext">{{ abouttext }}</p>
+    <ul id="aboutbuttons">
+      <li id="switchbutton1">Innovators</li>
+      <li id="switchbutton2">Creators</li>
+      <li id="switchbutton3">Designers</li>
+    </ul>
+    <div>
+      <img src="{{ Innovators }}" id="aboutimg">
     </div>
-    <div id="About">
-        <h1 id="abouttitle">Who We Are</h1>
-        <p id="abouttext">{{ abouttext }}</p>
-        <ul id="aboutbuttons">
-            <li id="switchbutton1">Innovators</li>
-            <li id="switchbutton2">Creators</li>
-            <li id="switchbutton3">Designers</li>
-        </ul>
-        <div>
-          <img src="{{ Innovators }}" id="aboutimg">
-        </div>
-    </div>
-<section id="Events">
-  <h1 id="events-title">Upcoming Events</h1>
-  <div class="events-grid">
-{%- for event in collections.events | limit(2) | reverse -%}
+  </div>
+  <section id="Events">
+    <h1 id="events-title">Upcoming Events</h1>
+    <div class="events-grid">
+      {%- for event in collections.events | limit(2) | reverse -%}
       <div class="event-card">
-      <img src="{{ event.data.image }}" />
-      <div class="event-content">
-        <h3>{{ event.data.title }}</h3>
-        <p class="event-date">{{ event.data.date | postDate }}</p>
-        <p>{{ event.data.description }}</p>
-        <a href="{{event.url}}" class="event-button">Learn More</a>
+        <img src="{{ event.data.image }}" />
+        <div class="event-content">
+          <h3>{{ event.data.title }}</h3>
+          <p class="event-date">{{ event.data.date | postDate }}</p>
+          <p>{{ event.data.description }}</p>
+          <a href="{{event.url}}" class="event-button">Learn More</a>
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
+    <div class="see-all-container">
+      <a href="allevents/index.html" class="see-all-link">See All Events →</a>
+    </div>
+  </section>
+  <div id="Projects">
+    <h1 id="projects-title">Our Projects</h1>
+      <a href="allarticles/index.html" id="Seeallprojects">See All projects →</a>
+      <div class="projects-grid">
+        {%- for project in collections.projects | limit(3) | reverse -%}
+        <div class="project-card">
+          <img src="{{ project.data.image }}" alt="project image" />
+          <div class="project-content">
+            <h3>{{ project.data.title }}</h3>
+            <p>{{project.data.description}}</p>
+            <a href="{{project.url}}" class="project-button">Read here!</a>
+          </div>
+        </div>
+      {%- endfor -%}
       </div>
     </div>
-  {%- endfor -%}
-  </div>
-  <div class="see-all-container">
-    <a href="allevents/index.html" class="see-all-link">See All Events →</a>
-  </div>
-</section>
-<div id="Projects">
-        <h1 id="projects-title">Our Projects</h1>
-               <a href="allarticles/index.html" id="Seeallprojects">See All projects →</a>
-             <div class="projects-grid">
-{%- for project in collections.projects | limit(3) | reverse -%}
-         <div class="project-card">
-         <img src="{{ project.data.image }}" alt="project 2 Image" />
-         <div class="project-content">
-            <h3>{{ project.data.title }}</h3>
-           <p>{{project.data.description}}
-           </p>
-           <a href="{{project.url}}" class="project-button">Read here!</a>
-          </div>
-       </div>
-  {%- endfor -%}
-     </div>
-
-    </div>
     <div id="Achievements">
-        <h1>Our Achievements</h1>
+      <h1>Our Achievements</h1>
     </div>
-    </div>
-
+  </div>
 </body>
 <script>
   document.getElementById("switchbutton1").addEventListener("click", function() {
-       document.getElementById("aboutimg").src = "{{ Innovators }}";
-       console.log("1")
+    document.getElementById("aboutimg").src = "{{ Innovators }}";
+    console.log("1")
   });
     document.getElementById("switchbutton2").addEventListener("click", function() {
-          document.getElementById("aboutimg").src = "{{ Creators }}";
-                 console.log("2")
+      document.getElementById("aboutimg").src = "{{ Creators }}";
+      console.log("2")
   });
     document.getElementById("switchbutton3").addEventListener("click", function() {
-            document.getElementById("aboutimg").src = "{{ Designers }}";
-                   console.log("3")
+      document.getElementById("aboutimg").src = "{{ Designers }}";
+      console.log("3")
   });
 </script>
 </html>

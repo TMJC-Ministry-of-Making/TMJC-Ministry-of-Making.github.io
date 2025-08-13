@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maker's Club</title>
+    <link href="../../style.css" rel="stylesheet">
     <link href="../../sarstyle.css" rel="stylesheet">
 </head>
 
 <body>
-{% include 'header.njk' %}
-
-        <div id="title">
-            <div id="titlediv">
-            <div id="titleimage" alt=""><img src="{{image}}" alt="{{imageAlt}}" /></div>
-            </div>
-            <div id="smalltitlediv">
-            <h1>{{title}}</h1>
-            <p id="desc">{{description}}</p>            
-            <time>{{date | postDate }}</time>
-            <address>{{author}}</address>
+    {% include 'header.njk' %}
+    <div id="title">
+        <div id="titlediv">
+            <div id="titleimage" alt="">
+                <img src="{{image}}" alt="{{imageAlt}}" />
             </div>
         </div>
-        <div id="page">
+        <div id="smalltitlediv">
+            <h1>{{title}}</h1>
+            <p id="desc">{{description}}</p>
+            <time>{{date | postDate }}</time>
+            <address>{{author}}</address>
+        </div>
+    </div>
+    <div id="page">
         <div id="content">
         {{ content | safe }}
         </div>
