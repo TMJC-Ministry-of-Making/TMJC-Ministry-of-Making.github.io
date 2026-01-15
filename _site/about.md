@@ -1,10 +1,9 @@
 ---
 title: About Us
-image: /assets/FwT7nN_WIAA4Bo5.jpg
+image: /assets/TMJC-StudentDevelopment_CCA_MakersClub_11.jpeg
 imageAlt: About Image
 layout: article.njk
 ---
-
 Makers Club is a cool Club.
 
 # This Website:
