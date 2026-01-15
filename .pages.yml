@@ -60,6 +60,7 @@ content:
     fields:
       - { name: title, label: title, type: string }
       - { name: image, label: image, type: image }
+      - { name: date, label: Date YYYY-MM-DD, type: string }
       - { name: imageAlt, label: imageAlt, type: string }
       - { name: layout, hidden: true, type: string, default: "article.njk" }
       - { name: body, label: Body, type: rich-text }
