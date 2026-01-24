@@ -64,22 +64,6 @@ a {
   }
 }
 
-header {
-  padding: 0 5vw;
-  width: 100%;
-  height: 4rem;
-  background-color: white;
-  > ul {
-    height: 4rem;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    > li.Pages {
-      margin: 0.75rem 1.25rem;
-    }
-  }
-}
-
 #hero {
   display: flex;
   flex-direction: column;
