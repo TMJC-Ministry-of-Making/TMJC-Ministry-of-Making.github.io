@@ -35,11 +35,11 @@ header ul {
     }
 
   .Pages {
+    display:inline-block;
     list-style-type: none;
     font-size: 1.2rem;
     color: var(--darkblueclr);
     align-items:center;
-    float: right;
     margin-left:20px;
   }
   #Title {
@@ -49,7 +49,7 @@ header ul {
     color: var(--blueclr);
   }
   #divforpages {
-    
+    float:right; /*float entire thing and make children inline-block to be correct order*/
   }
 
   
@@ -84,6 +84,9 @@ header ul {
 li {
         height:50px;
         line-height:50px; /*makes it vertically  centered*/
+    }
+    .Pages {
+            float:none;
     }
 }
 </style>
