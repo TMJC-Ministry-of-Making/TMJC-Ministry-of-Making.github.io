@@ -132,6 +132,8 @@ a {
   align-items: center;
   border: 3px solid black;
   background-color: white;
+  height: 100px;
+  width: 100px;
   text-decoration: none;
   padding: 5px 10px;
   color: var(--darkblueclr);
@@ -436,6 +438,7 @@ a {
   }
 
   [id^="switchbutton"] {
+    width: 100%;
     height: 64px;
     font-size: 0.9rem;
   }
