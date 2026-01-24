@@ -42,6 +42,24 @@ content:
         }
       - { name: layout, hidden: true, type: string, default: "article.njk" }
       - { name: body, label: Body, type: rich-text }
+  - name: achievements
+    label: Achievements
+    path: _site/achievements
+    type: collection
+    fields:
+      - { name: title, label: title, type: string }
+      - { name: author, label: Author, type: string }
+      - { name: date, label: Date YYYY-MM-DD, type: string }
+      - { name: image, label: image, type: image }
+      - { name: imageAlt, label: imageAlt, type: string }
+      - {
+          name: description,
+          label: description(Max 100 chars),
+          type: string,
+          options: { maxLength: 100 },
+        }
+      - { name: layout, hidden: true, type: string, default: "article.njk" }
+      - { name: body, label: Body, type: rich-text }
   - name: Home
     label: Home
     path: _site/index.md
