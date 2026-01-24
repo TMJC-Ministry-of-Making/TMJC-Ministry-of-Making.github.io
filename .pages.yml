@@ -48,7 +48,6 @@ content:
     type: collection
     fields:
       - { name: title, label: title, type: string }
-      - { name: author, label: Author, type: string }
       - { name: date, label: Date YYYY-MM-DD, type: string }
       - { name: image, label: image, type: image }
       - { name: imageAlt, label: imageAlt, type: string }
