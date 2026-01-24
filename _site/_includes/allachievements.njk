@@ -10,23 +10,22 @@
 <body>
 {% include 'header.njk' %}
     <div id="page">
-<div id="projects">
+<div id="Projects">
         <h1 id="projects-title">Our Achievements</h1>
-            <div class="projects-grid">
-          {%- for achievement in collections.achievements | limit(3) | reverse -%}
+             <div class="projects-grid">
+{%- for achievement in collections.achievements -%}
          <div class="project-card">
          <div class="project-content">
-            <a href="{{achievement.url}}"><h3>{{ achievement.data.title }}</h3></a>
+            <a href="{{project.url}}"><h3>{{ achievement.data.title }}</h3></a>
            <p>{{achievement.data.description}}
            </p>
           </div>
        </div>
-          {%- endfor -%}
+  {%- endfor -%}
      </div>
  
     </div>
     </div>
-        {% include 'footer.njk' %}
 </body>
 </html>
 
@@ -34,8 +33,8 @@
 
 <!--
 <ul>
-{%- for achievement in collections.achievements -%}
-  <li><a href="{{achievement.url}}">{{ achievement.data.title }}</a></li>
+{%- for event in collections.events -%}
+  <li><a href="{{event.url}}">{{ event.data.title }}</a></li>
 {%- endfor -%}
 </ul>
 -->
