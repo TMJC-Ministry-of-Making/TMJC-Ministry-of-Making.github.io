@@ -1,6 +1,7 @@
 ---
-Innovators: /assets/5d84acec-0d6c-4a88-9861-bdd725d80054.jpeg
-Creators: /assets/Screenshot 2025-08-11 203220.png
+Innovators: /assets/f34d24c4-f340-494e-ae5a-8908c09f627e.jpeg
+Creators: /assets/coverart.png
+Designers: /assets/TMJC-StudentDevelopment_CCA_MakersClub_11.jpeg
 heroimg: /assets/stan-twt-skeleton-banging-shield.gif
 abouttext: Maker’s Club is where imagination meets invention. We’re the go-to
   crew for building cool stuff, breaking things (on purpose), and pushing
