@@ -10,6 +10,6 @@ abouttext: >-
   into real-world impact.
 
 
-  ![](/assets/cat.jpg)
+  CCA Timings:
 layout: home.njk
 ---
