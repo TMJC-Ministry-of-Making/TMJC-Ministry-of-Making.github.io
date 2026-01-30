@@ -103,6 +103,7 @@ code {
   right: 0;
   border: solid 5px var(--darkblueclr);
   border-radius: 20px;
+  transform: translate(0%, 10%);
 }
 
 #About {
@@ -381,12 +382,6 @@ code {
 
 /* #FFFCF8*/
 
-@media (min-width: 768px) {
-  #heroimg {
-    width: 40vw;
-    transform: scale(2) translate(25%, 25%);
-  }
-}
 
 @media (max-width: 768px) {
   /* === HERO SECTION === */
