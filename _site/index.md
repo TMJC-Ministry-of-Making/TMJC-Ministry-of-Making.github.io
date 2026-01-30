@@ -17,6 +17,7 @@ abouttext: >-
     
   CCA Recruitment Form:  
 
-  /ima
+
+  ![](/assets/stan-twt-skeleton-banging-shield.gif)
 layout: home.njk
 ---
