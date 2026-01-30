@@ -10,9 +10,6 @@ abouttext: >-
   into real-world impact.
 
 
-  <br>
-
-
   CCA Timings:
 
 
@@ -20,5 +17,8 @@ abouttext: >-
 
 
   Wednesday: 415pm-630pm
+
+
+  CCA Recruitment Form:
 layout: home.njk
 ---
