@@ -5,7 +5,9 @@ date: 2026-01-15
 imageAlt: About Image
 layout: article.njk
 ---
-Makers Club is a cool Club.
+Makers Club is a really cool club filled with a lot of cool people :D
+
+![](/assets/cat.jpg)
 
 # This Website:
 
