@@ -1,7 +1,7 @@
 ---
 Innovators: /assets/f34d24c4-f340-494e-ae5a-8908c09f627e.jpeg
 Creators: /assets/coverart.png
-Designers: /assets/TMJC-StudentDevelopment_CCA_MakersClub_11.jpeg
+Designers: /assets/IMG_4559 Medium.png
 heroimg: /assets/5d84acec-0d6c-4a88-9861-bdd725d80054.jpeg
 layout: home.njk
 ---
