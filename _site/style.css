@@ -286,7 +286,8 @@ code {
   text-align: center;
 }
 
-#projects-title {
+#projects-title,
+#achievements-title {
   margin-top: 20vh;
   margin-bottom: 40px;
   font-size: 2.5rem;
@@ -312,14 +313,6 @@ code {
   text-align: left;
 }
 
-#achievements-title {
-  margin-top: 20vh;
-  margin-bottom: 40px;
-  font-size: 2.5rem;
-  color: var(--darkblueclr);
-  text-align: center;
-}
-
 .achievement-card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -330,7 +323,7 @@ code {
 
 .project-card img {
   border-radius: 20px;
-  object-fit: cover;
+  object-fit: fill;
   width: 40vw;
   height: 25vw;
   margin-right: 100px;
@@ -376,12 +369,14 @@ code {
   font-size: 1rem;
 }
 
-#Seeallprojects {
+#Seeallprojects,
+#Seeallachievements {
   padding-bottom: 50px;
   font-size: 1.2em;
   text-decoration: none;
   color: var(--blueclr);
   display: block;
+  text-align: center;
 }
 
 @media (max-width: 1100px) {
@@ -523,7 +518,538 @@ code {
   }
 
   #events-title,
-  #projects-title {
+  #projects-title,
+  #achievements-title {
+    font-size: 2rem;
+    margin-top: 10vh;
+  }
+
+  .see-all-link {
+    font-size: 1.2rem;
+    padding: 0.75rem 1.5rem;
+  }
+}@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jersey+20&display=swap');
+
+:root {
+  --blueclr: #135dff;
+  --offwhiteclr: #fbfaf6;
+  --darkblueclr: #001f58;
+  --darkblueshadow: rgba(from var(--darkblueclr) r g b / 37.5%);
+  --orangeclr: #ff9500;
+}
+
+*:not(li):has(> a:hover) {
+  width: 100%;
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1.6;
+  margin: 0;
+  display: block;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: "Fira Sans", sans-serif;
+  text-wrap: wrap;
+}
+
+body {
+  background-color: var(--offwhiteclr);
+}
+
+a {
+  text-decoration: none !important;
+}
+
+code {
+  border: 1px solid var(--darkblueclr);
+  font-family: "Cascadia Code", sans-serif;
+  padding-left: 1em;
+  border-radius: 10px;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 80px;
+  background-color: var(--blueclr);
+  background-size: clamp(48px, 8vw, 96px) clamp(48px, 8vw, 96px);
+  background-image:
+    linear-gradient(90deg, rgba(25, 27, 46, 0.05) 2px, transparent 0),
+    linear-gradient(180deg, rgba(46, 25, 30, 0.05) 2px, transparent 0);
+}
+
+#herotitle {
+  font-family: "EB Garamond", serif;
+  font-weight: 100;
+  padding-top: 1em;
+  font-size: 5em;
+  color: var(--offwhiteclr);
+  grid-column: 2 / 7;
+  grid-row: 1;
+}
+
+#herotext {
+  font-size: 1.5em;
+  grid-row: 2;
+  grid-column: 2 / 5;
+  color: var(--offwhiteclr);
+  margin-bottom: 1.3em;
+}
+
+#CTA {
+  grid-column: 2/7;
+  grid-row: 3;
+  width: 264px;
+  height: 60px;
+  display: block;
+  border: var(--darkblueclr) 5px solid;
+  background-color: white;
+  font-size: 1.2em;
+  color: var(--blueclr);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#CTA:hover {
+  background-color: var(--orangeclr);
+  color: var(--darkblueclr);
+  transition: 0.5s;
+}
+
+#heroimg {
+  height: auto;
+  margin-top: 7.5em;
+  left: 0;
+  right: 0;
+  border: solid 5px var(--darkblueclr);
+  border-radius: 20px;
+  transform: translate(0%, 10%);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#About {
+  width: 100%;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  background-size: clamp(48px, 8vw, 96px) clamp(48px, 8vw, 96px);
+  background-image:
+    linear-gradient(90deg, rgba(25, 27, 46, 0.05) 2px, transparent 0),
+    linear-gradient(180deg, rgba(46, 25, 30, 0.05) 2px, transparent 0);
+}
+
+#abouttitle {
+  font-family: "EB Garamond", serif;
+  font-weight: 100;
+  margin-top: 40vw;
+  font-size: 5em;
+  color: var(--blueclr);
+  grid-column: 2 / 7;
+  grid-row: 1;
+}
+
+#abouttext {
+  grid-column: 2 / 7;
+  grid-row: 2;
+  font-size: 1.2rem;
+}
+
+[id^="switchbutton"] {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: var(--darkblueclr);
+  transition: background-color 0.5s ease;
+  border-radius: 8px;
+  &:hover {
+    background-color: var(--orangeclr);
+  }
+}
+
+#aboutbuttons {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 37.5px;
+  top: calc(-1 * var(--py));
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+  gap: 4px;
+}
+
+#aboutimg {
+  width: 42vw;
+  height: auto;
+  right: 0;
+  position: relative;
+  float: right;
+}
+
+#Events {
+  padding: 0 80px;
+  padding: 80px;
+  text-align: center;
+}
+
+#events-title {
+  margin-top: 20vh;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: var(--darkblueclr);
+  border: 3px solid var(--darkblueclr);
+  background-color: white;
+  box-shadow: 8px 8px 0 var(--darkblueshadow);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10 20px;
+}
+
+#Eventsbackground {
+  background-color: var(--blueclr);
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+.event-card {
+  background-color: white;
+  box-shadow: 8px 8px 0 var(--darkblueshadow);
+  overflow: hidden;
+  min-width: 80%;
+  text-align: left;
+  border: solid 5px var(--darkblueclr);
+  > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+.event-content {
+  padding: 30px;
+  font-size: 1.1rem; /* slightly larger text */
+  line-height: 1.6; /* more readable */
+}
+
+.event-content h3 {
+  margin-bottom: 15px;
+  font-size: 2rem; /* bigger title */
+}
+
+.event-content p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+.event-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--darkblueclr);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.event-button:hover {
+  background-color: var(--orangeclr);
+}
+
+.event-date {
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.see-all-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.see-all-link {
+  border: 3px solid var(--darkblueclr);
+  background-color: white;
+  box-shadow: 8px 8px 0 var(--darkblueshadow);
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: var(--darkblueclr);
+  font-weight: bold;
+  transition: color 0.3s;
+  display: inline-block;
+}
+
+.see-all-link:hover {
+  background-color: var(--orangeclr);
+}
+
+#Projects {
+  padding: 0 80px;
+  padding: 80px;
+  text-align: center;
+}
+
+#projects-title,
+#achievements-title {
+  margin-top: 20vh;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: var(--darkblueclr);
+  text-align: center;
+}
+
+#projectsbackground {
+  background-color: var(--blueclr);
+}
+
+.projects-grid {
+  display: grid;
+  gap: 40px;
+  justify-items: center;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 80vw;
+  min-height: 45vh;
+  text-align: left;
+}
+
+.achievement-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80vw;
+  min-height: 45vh;
+  text-align: left;
+}
+
+.project-card img {
+  border-radius: 20px;
+  object-fit: fill;
+  width: 40vw;
+  height: 25vw;
+  margin-right: 100px;
+  margin-left: 150px;
+  float: left;
+}
+
+.project-content {
+  padding: 30px;
+  font-size: 1.1rem; /* slightly larger text */
+  line-height: 1.6; /* more readable */
+}
+
+.project-content h3 {
+  margin-bottom: 15px;
+  font-size: 2rem; /* bigger title */
+}
+
+.project-content p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+.project-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--darkblueclr);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.project-button:hover {
+  background-color: var(--orangeclr);
+}
+
+.project-date {
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+#Seeallprojects,
+#Seeallachievements {
+  padding-bottom: 50px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: var(--blueclr);
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+ .project-content h3 {
+  font-size: 1.5em;
+ } 
+ .project-card img {
+    width: 40vw;
+    height: 30vw;
+  margin-left: 50px;
+  margin-right: 25px;
+ }
+}
+
+
+/* #FFFCF8*/
+
+
+@media (max-width: 768px) {
+  /* === HERO SECTION === */
+  #hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    padding: 40px 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  #herotitle {
+    font-size: 2.5em;
+    grid-column: 1 / -1;
+    padding-top: 20px;
+  }
+
+  #herotext {
+    font-size: 1.2em;
+    grid-column: 1 / -1;
+    padding: 20px 0;
+  }
+
+  #CTA {
+    width: 100%;
+    max-width: 300px;
+    height: 60px;
+    font-size: 1.2em;
+    margin: 20px auto;
+    grid-column: 1 / -1;
+  }
+
+  #heroimg {
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* === ABOUT SECTION === */
+  #About {
+    padding: 40px 20px;
+    line-height: 1.7em;
+    text-align: left;
+  }
+
+  #abouttitle {
+    font-size: 2.5em;
+    margin-top: 40px;
+    padding-top: 0;
+    grid-column: 1 / -1;
+  }
+
+  #abouttext {
+    font-size: 1rem;
+    grid-column: 1 / -1;
+    margin-top: 20px;
+  }
+
+  #aboutbuttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    align-items: stretch;
+    gap: 15px;
+    margin-top: 30px;
+    height: 100%;
+    grid-column: 1 / -1;
+  }
+
+  [id^="switchbutton"] {
+    width: 100%;
+    height: 64px;
+    font-size: 0.9rem;
+  }
+
+  #aboutimg {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  #Events,
+  #Projects {
+    padding: 20px;
+  }
+
+  .events-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-card,
+  .project-card,
+  .achievement-card {
+    max-width: 100%;
+  }
+
+  .project-card,
+  .achievement-card {
+    display: block;
+    text-align: center;
+  }
+
+  .project-card img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+  }
+
+  .project-content {
+    padding: 10px;
+  }
+
+  .project-content h3,
+  .event-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .project-content p,
+  .event-content p {
+    font-size: 1rem;
+  }
+
+  #events-title,
+  #projects-title,
+  #achievements-title {
     font-size: 2rem;
     margin-top: 10vh;
   }
