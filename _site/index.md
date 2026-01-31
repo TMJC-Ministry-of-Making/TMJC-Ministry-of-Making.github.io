@@ -5,4 +5,10 @@ Designers: /assets/TMJC-StudentDevelopment_CCA_MakersClub_11.jpeg
 heroimg: /assets/stan-twt-skeleton-banging-shield.gif
 layout: home.njk
 ---
-![](/assets/cat.jpg)
+Maker’s Club is where imagination meets invention. We’re the go-to crew for building cool stuff, breaking things (on purpose), and pushing creative limits. From gadgets to gizmos, we’re hands-on innovators turning wild ideas into real-world impact.
+
+CCA Timings:
+
+Monday: 430pm-630pm
+
+Wednesday: 415pm-630pm
