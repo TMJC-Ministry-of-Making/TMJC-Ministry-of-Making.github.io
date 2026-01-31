@@ -5,3 +5,4 @@ Designers: /assets/TMJC-StudentDevelopment_CCA_MakersClub_11.jpeg
 heroimg: /assets/stan-twt-skeleton-banging-shield.gif
 layout: home.njk
 ---
+![](/assets/cat.jpg)
