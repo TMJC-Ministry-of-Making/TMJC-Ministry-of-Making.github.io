@@ -291,9 +291,7 @@ code {
   margin-bottom: 40px;
   font-size: 2.5rem;
   color: var(--darkblueclr);
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
 
 #projectsbackground {
@@ -310,6 +308,22 @@ code {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   max-width: 80vw;
+  min-height: 45vh;
+  text-align: left;
+}
+
+#achievements-title {
+  margin-top: 20vh;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: var(--darkblueclr);
+  text-align: center;
+}
+
+.achievement-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80vw;
   min-height: 45vh;
   text-align: left;
 }
@@ -466,7 +480,6 @@ code {
     margin-top: 30px;
   }
 
-  /* === Events & Projects shared tweaks (optional) === */
   #Events,
   #Projects {
     padding: 20px;
@@ -478,11 +491,13 @@ code {
   }
 
   .event-card,
-  .project-card {
+  .project-card,
+  .achievement-card {
     max-width: 100%;
   }
 
-  .project-card {
+  .project-card,
+  .achievement-card {
     display: block;
     text-align: center;
   }
@@ -517,7 +532,4 @@ code {
     font-size: 1.2rem;
     padding: 0.75rem 1.5rem;
   }
-}
-code {
-  display: block;
 }
