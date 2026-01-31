@@ -65,10 +65,10 @@
       </div>
     </div>
 <div id="Achievements">
-        <h1 id="projects-title">Our Achievements</h1>
+        <h1 id="achievements-title">Our Achievements</h1>
           <div class="projects-grid">
           {%- for achievement in collections.achievements | limit(3) | reverse -%}
-         <div class="project-card">
+         <div class="achievement-card">
          <div class="project-content">
             <a href="{{achievement.url}}"><h3>{{ achievement.data.title }}</h3></a>
            <p>{{achievement.data.description}}</p>
@@ -95,7 +95,6 @@
   });
 </script>
 </html>
-
 
 
 
