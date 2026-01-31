@@ -330,7 +330,7 @@ code {
 
 .project-card img {
   border-radius: 20px;
-  object-fit: fill;
+  object-fit: cover;
   width: 40vw;
   height: 25vw;
   margin-right: 100px;
