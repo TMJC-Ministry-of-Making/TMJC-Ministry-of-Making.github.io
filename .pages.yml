@@ -68,7 +68,7 @@ content:
       - { name: Creators, label: Creators, type: image }
       - { name: Designers, label: Designers, type: image }
       - { name: heroimg, label: Main Image, type: image }
-      - { name: abouttext, label: About Text, type: rich-text }
+      - { name: body, label: About Text, type: rich-text }
       - { name: layout, hidden: true, type: string, default: "home.njk" }
   - name: About
     label: About
