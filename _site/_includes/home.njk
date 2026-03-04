@@ -32,7 +32,7 @@
   <section id="Events">
     <h1 id="events-title">Upcoming Events</h1>
     <div class="events-grid">
-      {%- for event in collections.events | reverse | limit(2) -%}
+      {%- for event in collections.events | reverse | limit(2) -%} {# make sure reverse comes first, since if limit comes first it'll reverse the oldest two since it limits first.  #}
       <div class="event-card">
         <img src="{{ event.data.image }}" alt="{{ event.data.imageAlt }} "/>
         <div class="event-content">
@@ -96,6 +96,7 @@
   });
 </script>
 </html>
+
 
 
 
